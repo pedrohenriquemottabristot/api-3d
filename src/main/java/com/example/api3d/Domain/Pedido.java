@@ -6,9 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.UUID;
 
-@Table(name = "endereco")
+@Table(name = "pedido")
 @Entity
 @Getter
 @Setter
@@ -17,7 +16,7 @@ import java.util.UUID;
 public class Pedido {
     @Id
     @GeneratedValue
-    UUID id;
+    private Long id;
 
     int andares;
 
@@ -28,6 +27,14 @@ public class Pedido {
     String desenho1;
     String desenho2;
     String desenho3;
+    public boolean isAtivo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isAtivo'");
+    }
+    public void setAtivo(boolean b) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setAtivo'");
+    }
 
   
     
